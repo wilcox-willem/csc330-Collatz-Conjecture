@@ -7,34 +7,22 @@ To compile, use the following commands
 within the following subfolders
 
 normal:
-      0-Max ~
-    num-Max ~
-    num-num ~
+	  compile ~ c++ collatzNorm.cpp -o collatzNorm
+	  run num ~ collatzNorm num
+	run range ~ collatzNorm numMin numMax 
+
 recursive:
-      0-Max ~
-    num-Max ~
-    num-num ~
+	  compile ~ c++ collatzNorm.cpp -o collatzNorm
+	  run num ~ collatzNorm num
+	run range ~ collatzNorm numMin numMax 
 
 ---------------------------------------
-NOTES :: C++
-    -
+NOTES:
 
-    -
+	For input, anything above 2.1 billion will not run
+	Any input below 2 will also have a 0 sequence result
 
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
+	I used uint64_t as my data type, but some of my peers
+	mentioned unsigned long long is a good one too. As far
+	as I am aware, they are both unsigned 64 bit ints, so
+	shouldn't make a

@@ -7,34 +7,11 @@ To compile, use the following commands
 within the following subfolders
 
 normal:
-      0-Max ~
-    num-Max ~
-    num-num ~
+        num ~ julia collatzNormal.jl num
+    num-num ~ julia collatzNormal.jl min max
 recursive:
-      0-Max ~
-    num-Max ~
-    num-num ~
+        num ~ julia collatzRecursive.jl num
+    num-num ~ julia collatzRecursive.jl min max
 
 ---------------------------------------
-NOTES :: Julia
-    -
 
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -

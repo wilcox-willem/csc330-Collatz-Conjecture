@@ -7,34 +7,15 @@ To compile, use the following commands
 within the following subfolders
 
 normal:
-      0-Max ~
-    num-Max ~
-    num-num ~
+    compile ~ rustc collatzNormal.rs
+        num ~ collatzNormal num
+    num-num ~ collatzNormal min max
 recursive:
-      0-Max ~
-    num-Max ~
-    num-num ~
-
+    compile ~ rustc collatzRecursive.rs
+        num ~ collatzRecursive num
+    num-num ~ collatzRecursive min max
 ---------------------------------------
 NOTES :: Rust
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
+    - I don't get the hype
+    - I like perl more still. 
+      Perl was something else, in a good way

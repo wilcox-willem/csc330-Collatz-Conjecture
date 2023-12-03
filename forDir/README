@@ -7,34 +7,22 @@ To compile, use the following commands
 within the following subfolders
 
 normal:
-      0-Max ~
-    num-Max ~
-    num-num ~
+    compile ~ gfortran -o collatzNormal collatzNormal.f08
+        num ~ collatzNormal num
+    num-num ~ collatzNormal min max
 recursive:
-      0-Max ~
-    num-Max ~
-    num-num ~
+    compile ~ gfortran -o collatzRecursive collatzNormal.f08
+        num ~ collatzRecursive num
+    num-num ~ collatzRecursive min max
 
 ---------------------------------------
 NOTES :: Fortran
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
-
-    -
+    - What can I say? It's gross.
+    - Yeah it can be fast, but I don't like it
+    - It is kind of nice knowing like 90% of what's
+      happening because it isn't as complex under the 
+      hood (in comparison to some of the shenanigans in python)
+      
+    - I think I will only return to Fortran for the right price
+      (who knows, I might change my mind on it and foam at the mouth
+       if anyone dares tell me Fortran isn't the future)

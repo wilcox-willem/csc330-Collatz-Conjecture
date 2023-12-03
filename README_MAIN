@@ -8,8 +8,8 @@ This project contains 5 subdirectories for
     - Fortan
     - GO
     - Julia
-    - List
     - Rust
+    - Lisp    
 
 Each subdirectory contains
     - collatzRegular
@@ -18,3 +18,153 @@ Each subdirectory contains
      :: recursive version
     - README
      :: notes on compiling / organization
+
+Below are the README's in full for each lang
+(in the order listed above)
+
+// C++ // C++ // C++ // C++ // C++ // C++ // C++ //
+The Collatz Conjecture
+Language : C++
+Willem Wilcox
+CSC 330, Dr.Pounds, MU
+
+To compile, use the following commands
+within the following subfolders
+
+normal:
+	  compile ~ c++ collatzNorm.cpp -o collatzNorm
+	  run num ~ collatzNorm num
+	run range ~ collatzNorm numMin numMax 
+
+recursive:
+	  compile ~ c++ collatzNorm.cpp -o collatzNorm
+	  run num ~ collatzNorm num
+	run range ~ collatzNorm numMin numMax 
+
+---------------------------------------
+NOTES:
+
+	For input, anything above 2.1 billion will not run
+	Any input below 2 will also have a 0 sequence result
+
+	I used uint64_t as my data type, but some of my peers
+	mentioned unsigned long long is a good one too. As far
+	as I am aware, they are both unsigned 64 bit ints, so
+	shouldn't make a
+// C++ // C++ // C++ // C++ // C++ // C++ // C++ //
+
+
+
+
+// Fortran // Fortran // Fortran // Fortran // Fortran //
+The Collatz Conjecture
+Language : Fortran
+Willem Wilcox
+CSC 330, Dr.Pounds, MU
+
+To compile, use the following commands
+within the following subfolders
+
+normal:
+    compile ~ gfortran -o collatzNormal collatzNormal.f08
+        num ~ collatzNormal num
+    num-num ~ collatzNormal min max
+recursive:
+    compile ~ gfortran -o collatzRecursive collatzNormal.f08
+        num ~ collatzRecursive num
+    num-num ~ collatzRecursive min max
+
+---------------------------------------
+NOTES :: Fortran
+    - What can I say? It's gross.
+    - Yeah it can be fast, but I don't like it
+    - It is kind of nice knowing like 90% of what's
+      happening because it isn't as complex under the 
+      hood (in comparison to some of the shenanigans in python)
+      
+    - I think I will only return to Fortran for the right price
+      (who knows, I might change my mind on it and foam at the mouth
+       if anyone dares tell me Fortran isn't the future)
+// Fortran // Fortran // Fortran // Fortran // Fortran //
+
+
+
+
+// GO // GO // GO // GO // GO // GO // GO // GO // GO //
+The Collatz Conjecture
+Language : Go
+Willem Wilcox
+CSC 330, Dr.Pounds, MU
+
+To compile, use the following commands
+within the following subfolders
+
+normal:
+	  compile ~ go build collatzNorm.go
+	  run num ~ collatzNorm num
+	run range ~ collatzNorm numMin numMax 
+
+recursive:
+	  compile ~ go build collatzRecursive.go
+	  run num ~ collatzRecursive num
+	run range ~ collatzRecursive numMin numMax 
+
+---------------------------------------
+NOTES:
+
+	For input, anything above 2.1 billion will not run
+	Any input below 2 will also have a 0 sequence result
+// GO // GO // GO // GO // GO // GO // GO // GO // GO //
+
+
+
+
+// Julia // Julia // Julia // Julia // Julia // Julia //
+The Collatz Conjecture
+Language : Julia
+Willem Wilcox
+CSC 330, Dr.Pounds, MU
+
+To compile, use the following commands
+within the following subfolders
+
+normal:
+        num ~ julia collatzNormal.jl num
+    num-num ~ julia collatzNormal.jl min max
+recursive:
+        num ~ julia collatzRecursive.jl num
+    num-num ~ julia collatzRecursive.jl min max
+
+---------------------------------------
+NOTES: 
+
+    Julia is kinda fun, feels a lot like GO though,
+    but I like GO more
+// Julia // Julia // Julia // Julia // Julia // Julia //
+
+
+
+
+// Rust // Rust // Rust // Rust // Rust // Rust //
+The Collatz Conjecture
+Language : Rust
+Willem Wilcox
+CSC 330, Dr.Pounds, MU
+
+To compile, use the following commands
+within the following subfolders
+
+normal:
+    compile ~ rustc collatzNormal.rs
+        num ~ collatzNormal num
+    num-num ~ collatzNormal min max
+recursive:
+    compile ~ rustc collatzRecursive.rs
+        num ~ collatzRecursive num
+    num-num ~ collatzRecursive min max
+---------------------------------------
+NOTES :: Rust
+    - I don't get the hype
+    - I like perl more still. 
+      Perl was something else, in a good way
+// Rust // Rust // Rust // Rust // Rust // Rust //

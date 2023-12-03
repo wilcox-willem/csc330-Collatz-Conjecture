@@ -12,9 +12,9 @@ normal:
 	run range ~ collatzNorm numMin numMax 
 
 recursive:
-	  compile ~ c++ collatzNorm.cpp -o collatzNorm
-	  run num ~ collatzNorm num
-	run range ~ collatzNorm numMin numMax 
+	  compile ~ c++ collatzRecursive.cpp -o collatzRecursive
+	  run num ~ collatzRecursive num
+	run range ~ collatzRecursive numMin numMax 
 
 ---------------------------------------
 NOTES:
